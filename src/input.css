@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .text-body{
+        @apply text-base font-normal leading-6;
+    }
+    .grid-sys{
+        @apply grid grid-cols-5;
+    }
+    .writing-vertical{
+        writing-mode: sideways-lr;
+    }
+    
+    html {
+        overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    }
+    html::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
+    }
+}
