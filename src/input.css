@@ -13,14 +13,17 @@
     .writing-vertical{
         writing-mode: sideways-lr;
     }
-    
     html {
-        overflow-y: scroll;
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+
+        scroll-behavior: smooth !important;
     }
-    html::-webkit-scrollbar { /* WebKit */
+    /* html {
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;  
+    }
+    html::-webkit-scrollbar { 
         width: 0;
         height: 0;
-    }
+    } */
 }
